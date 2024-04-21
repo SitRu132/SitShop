@@ -1,0 +1,41 @@
+body{
+    background: radial-gradient(#374e3f 4%, #010728 74%);}
+
+.flex-header>.navbar{
+    background-color:#010728;
+}
+.navbar.navbar-expand-lg{
+    background: radial-gradient(#010728 35%, #4657d2 76%, #010728 91%, #010728 98%);
+}
+
+.navbar-brand img{
+    width: 8em;
+}
+
+.nav-link{
+    color: rgb(119, 119, 119);
+}
+
+.navbar-nav .nav-link.active{
+    color: rgb(196, 196, 196);
+}
+
+.navbar.navbar-expand.bg-body-tertiar{
+    background-color: aliceblue;
+}
+
+body>main>.product-container{
+    margin-top: 10px;
+}
+
+.flex-header .navbar{
+    display: flex;
+    justify-content: space-between;
+}
+
+.account{
+    display: block;
+    margin: 10px;
+}
+
+
