@@ -1,4 +1,4 @@
-body{
+html>body{
     background: radial-gradient(#374e3f 4%, #010728 74%);}
 
 .flex-header>.navbar{
@@ -39,3 +39,59 @@ body>main>.product-container{
 }
 
 
+
+.right-advertisement{
+    grid-column: 10/13;
+}
+
+.game.card{
+    width: 100%;
+    height: 100%;
+}
+.game.card img{
+    width: 100%;
+    height: 100%;
+}
+
+.right-advertisement .card{
+    margin: 10px;
+}
+
+
+main{
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+}
+
+.left-advertisement{
+    grid-column: 1/3;
+    grid-row: 1/3;
+    background: linear-gradient(180deg, #010728 30%, #0b2c5c 70%);
+}
+
+.left-advertisement .card{
+    margin: 10px;
+}
+
+.product-container{
+    grid-column: 3/10;
+    grid-row: 1/3;
+}
+
+.main-carousel{
+    width: 100%;
+    grid-column: 3/10;
+    margin: 10px;
+}
+
+.main-carousel img{
+    padding-right: 10px;
+    border-radius: 25%;
+}
+@media(max-width: 800px){
+    .product_container{
+        grid-column: 2/12;
+    }
+
+}
