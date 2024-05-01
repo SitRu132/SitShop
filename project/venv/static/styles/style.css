@@ -89,6 +89,23 @@ main{
     padding-right: 10px;
     border-radius: 25%;
 }
+.color-text-registr{
+    color: white;
+}
+.reg-log{
+    display: flex;
+}
+.reg-log-page{
+    padding-inline: 500px;
+    color: wheat;
+
+}
+.reg-log-page>h1{
+    text-align: center;
+}
+.reg-log>a{
+    padding-right: 15px;
+}
 @media(max-width: 800px){
     .product_container{
         grid-column: 2/12;
