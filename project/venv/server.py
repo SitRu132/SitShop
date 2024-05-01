@@ -46,7 +46,6 @@ def reqister():
         user = User(
             name=form.name.data,
             email=form.email.data,
-            about=form.about.data
         )
         user.set_password(form.password.data)
         db_sess.add(user)
@@ -72,20 +71,6 @@ def login():
 
 def main():
     db_session.global_init("users.db")
-    user = User()
-    user.surname = "Scott"
-    user.name = "Ridley"
-    user.age = 21
-    user.position = "captain"
-    user.speciality = 'research engineer'
-    user.address = 'module_1'
-    user.email = 'scott_chief@mars.org'
-    db_sess = db_session.create_session()
-    db_sess.add(user)
-    db_sess.commit()
-
-    user = db_sess.query(User).filter(User.id == 1).first()
-    db_sess.commit()
     app.run()
 
 
